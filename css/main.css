@@ -1,32 +1,35 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.hidden {
-    display: none;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#container {
-    margin: 20px auto;
-    width: 428px;
-    border: solid 1px #333;
-    background: #efefef;
-    border-radius: 10px;
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-#mainContent {
-        display: grid;
-        grid-template-columns: repeat(4, 85px);
-        grid-column-gap: 16px;
-        padding-left: 20px;
-        padding-right: 20px;
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-article {
-    grid-column: 1/-1;
+.image-container {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
 }
 
-img {
-    margin-top: 20px;
-    margin-bottom: 30px;
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-
